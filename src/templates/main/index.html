@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Shortener</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    <div class="container bg-white p-4">
+        <div class="head mb-4">
+            <div class="display-4">URL Shortener</div>
+            <div>Shorten your link</div>
+        </div>
+        <div class="body">
+            <form class="w-50" action="/url" method="post" target="_self">
+                <div class="form-group">
+                    <input id="url" name="url" type="text" class="form-control" placeholder="Your Link">
+                </div>
+                <div class="form-group">
+                    <input id="shorten" name="shorten" type="text" class="form-control" placeholder="Shorten">
+                </div>
+                <button type="submit" class="btn btn-primary">Shorten</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
